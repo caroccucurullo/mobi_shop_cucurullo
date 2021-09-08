@@ -1,0 +1,98 @@
+[{
+    "id":1,
+    "nombre":"BANCO de terciopelo azul",
+    "img":"../img/shop/banquetaAzul.png",
+    "categoria":"SALE", 
+    "material":"Hierro, terciopelo", 
+    "medidas":"45 x 45", 
+    "precio":10000,
+    "cantidad":1
+},
+
+{
+    "id":2,
+    "nombre":"PUF agua marina",
+    "img":"../img/shop/banquetaVerdeAgua.png", 
+    "categoria":"NUEVO", 
+    "material":"Madera, pana", 
+    "medidas":"45 x 40", 
+    "precio":9000,
+    "cantidad":1
+},
+
+{
+    "id":3,
+    "nombre":"PUF terciopelo verde",
+    "img":"../img/shop/banquetaVerdeIngles.png", 
+    "categoria":"MÁS VENDIDO", 
+    "material":"Madera, terciopelo", 
+    "medidas":"45 x 40", 
+    "precio":11000,
+    "cantidad":1
+},
+
+{
+    "id":4,
+    "nombre":"SILLÓN en chenille amarillo",
+    "img": "../img/shop/sillonAmarilloMaiz.png", 
+    "categoria":"DESTACADO", 
+    "material":"Madera, chenille", 
+    "medidas":"200 x 90", 
+    "precio":100000,
+    "cantidad":1
+},
+
+{
+    "id":5,
+    "nombre":"SILLÓN de terciopelo rosa",
+    "img": "../img/shop/sillonRosa.png", 
+    "categoria":"NUEVO", 
+    "material":"Madera, terciopelo", 
+    "medidas":"170 x 70", 
+    "precio":80000,
+    "cantidad":1
+},
+
+{
+    "id":6,
+    "nombre":"SILLÓN de lino agua marina",
+    "img":"../img/shop/sillonVerdeAgua.png", 
+    "categoria":"MÁS VENDIDO", 
+    "material":"Madera, lino", 
+    "medidas":"160 x 70", 
+    "precio":70000,
+    "cantidad":1
+},
+
+{
+    "id":7,
+    "nombre":"SILLÓN en lino gris cemento",
+    "img":"../img/shop/sillonGrisCemento.png", 
+    "categoria":"Sillón 1 cuerpo", 
+    "material":"SALE", 
+    "medidas":"70 x 70", 
+    "precio":45000,
+    "cantidad":1
+},
+
+{
+    "id":8,
+    "nombre": "SILLÓN en chenille naranja",
+    "img": "../img/shop/sillonNaranja.png", 
+    "categoria":"NUEVO", 
+    "material":"Madera, chenille", 
+    "medidas":"60 x 70", 
+    "precio":48000,
+    "cantidad":1
+},
+
+{
+    "id":9,
+    "nombre": "SILLÓN en lino gris claro",
+    "img": "../img/shop/sillonGrisClaro.png", 
+    "categoria":"DESTACADO", 
+    "material":"Madera, lino", 
+    "medidas":"60 x 60", 
+    "precio":35000,
+    "cantidad":1
+}]

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif; }
+
+html {
+  font-size: 100%; }
+
+.fuente__titulos1 {
+  font-family: 'DM Serif Display', serif; }
+
+.parrafo_negrita {
+  font-size: 1rem;
+  font-weight: bold; }
+
+/*HEADER*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+  height: 10vh; }
+
+header img {
+  margin-left: 30px; }
+
+header nav {
+  display: flex; }
+
+a {
+  text-decoration: none; }
+
+ul.ul_padre {
+  list-style: none;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none; }
+
+.ul_padre li {
+  display: flex;
+  position: relative;
+  font-size: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: .5rem;
+  align-items: center;
+  margin-right: 30px; }
+
+.ul_padre li:hover {
+  background-color: white; }
+
+ul li:hover ul {
+  margin-top: 6rem; }
+
+ul.ul_padre ul {
+  position: absolute;
+  display: none; }
+
+ul ul li.subLi {
+  display: block;
+  padding-top: 5px;
+  border: none; }
+
+ul li:hover ul {
+  display: block; }
+
+/*Animaciones Nav*/
+/*Underline From Left*/
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden; }
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: black;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0; }
+
+footer {
+  background-color: #282828;
+  color: white;
+  padding-top: 20px;
+  overflow: hidden; }
+
+@media screen and (max-width: 1020px) {
+  .tuCasa, .deNuevo, .tuHogar {
+    visibility: hidden; } }
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    padding-bottom: 19px; }
+  .wave {
+    padding-top: 6rem; }
+  footer section {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media (max-width: 768px) {
+  .text-center-xs {
+    text-align: center; }
+  .text-center-xs img {
+    width: 366px; }
+  section {
+    overflow: hidden; }
+  main {
+    overflow: hidden; } }
+
+/*------------ INDEX --------------*/
+main {
+  padding-bottom: 10vh; }
+
+/*Barra de navegacion*/
+.navbar .nav-link {
+  color: black;
+  margin-right: 20px;
+  transition: 0.2s; }
+
+.btn-custom {
+  border: 1.5px solid black;
+  border-radius: 50px;
+  color: black;
+  background: none;
+  padding: 8px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s; }
+
+.btn-custom:hover {
+  background: black;
+  border: 1.5px solid black;
+  color: white; }
+
+.navbar-toggler {
+  padding: .10rem .45rem;
+  border: 1px solid black; }
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none; }
+
+.navbar-toggler i.bi-list {
+  color: black;
+  font-size: 1.6rem; }
+
+/*video*/
+.sectionBig {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+/*texto sobre video*/
+.tuCasa {
+  position: absolute;
+  top: 400%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray; }
+
+.deNuevo {
+  position: absolute;
+  top: 550%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray; }
+
+.tuHogar {
+  position: absolute;
+  top: 750%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray; }
+
+/*productos*/
+.posicionBoton {
+  position: absolute;
+  top: 70%;
+  left: 70%; }
+
+/*----------- NOSOTROS ----------*/
+.nosotros {
+  border: solid 1px #d6d6d6;
+  border-radius: 5px; }
+
+/*----------- SHOP ----------*/
+.card__button {
+  border: 1.5px solid #282828;
+  height: 2.5rem;
+  text-align: center;
+  background: none;
+  color: #282828;
+  margin-left: 60%; }
+  .card__button:hover {
+    background-color: #282828;
+    color: whitesmoke;
+    cursor: pointer; }
+
+/*----------- IDEAS ----------*/
+.pointer {
+  cursor: pointer; }
+
+/*---------- CONTACTO ---------*/
+form {
+  width: 60%;
+  margin: auto; }

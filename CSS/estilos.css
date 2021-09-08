@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+	font-size: 100%;
+}
+
+.titulo{
+  color: rgb(84, 113, 175);
+  font-weight: bold;
+}
+
+.parrafo_negrita{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.fondo{
+  background-color: rgb(208, 218, 214);
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+h2{
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+
+/*HEADER*/
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+  height: 10vh;
+}
+
+header img {
+  margin-left: 30px;
+}
+
+header nav{
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul.ul_padre {
+  list-style: none;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ul_padre li {
+  display: flex;
+  position: relative;
+  font-size: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: .5rem;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.ul_padre li:hover{
+  background-color: white;
+}
+
+ul li:hover ul{
+  margin-top: 6rem;
+}
+
+ul.ul_padre ul {
+  position: absolute;
+  display: none;
+}
+
+ul ul li.subLi {
+  display: block;
+  padding-top: 5px;
+  border: none;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+/*Animaciones Nav*/
+
+/*Underline From Left*/
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: black;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+/*------------ INDEX --------------*/
+
+/*SECCIONES*/
+
+main{
+  padding-top: 50px;
+  padding-bottom: 10vh ;
+}
+
+/*video*/
+
+.sectionBig { 
+  padding: 1em;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20xp;
+}
+
+.sectionBig div {
+  padding: 30px;
+}
+
+.sectionBig p {
+  padding-top: 30px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+
+/*texto sobre video*/
+
+.tuCasa{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.deNuevo{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.tuHogar{
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+}
+
+/*productos*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px 5px;
+  margin: 20px;
+  grid-template-areas:
+    "section1 section1 section2 section2"
+    "section3 section4 section2 section2";
+}
+
+.section1 { 
+  grid-area: section1;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.section2 { 
+  grid-area: section2; 
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.section3 { 
+  grid-area: section3; 
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.section4 { 
+  grid-area: section4;
+  display: flex;
+  flex-direction: column;
+  padding: 1em; 
+}
+
+/*transformaciones fotos*/
+
+.traslateIzq:hover{
+	transform: translate(10px, 5px);
+	cursor: pointer;
+}
+
+.traslateDer:hover{
+	transform: translate(5px, 10px);
+	cursor: pointer;
+}
+
+
+/*----------- NOSOTROS ----------*/
+
+.nosotros-padre{
+  padding: 2em 4em;
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.nosotros-hijo{
+  border: solid 2px grey;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  margin: 20px;
+}
+
+.nosotros-hijo p{
+  text-align: center;
+  max-width: 75vh;
+  padding: 10px;
+}
+
+.nosotros-hijo img{
+  max-width: 100%;
+  padding: 10px;
+}
+
+
+/*----------- IDEAS ----------*/
+
+.blog-padre{
+  height: 75vh;
+  padding: 2em 4em;
+  margin: 5em;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.blog-hijo{
+  border: solid 2px grey;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vh;
+  padding: 2em;
+  margin: 20px;
+}
+
+.blog-hijo p{
+  text-align: center;
+  max-width: 25rem;
+  padding: 10px;
+}
+
+.blog-hijo img{
+  max-width: 100%;
+  padding: 10px;
+}
+
+.blog-hijo button{
+  height: 50px;
+  background-color:  rgb(153, 121, 177);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.blog-hijo button:hover{
+  background-color: cadetblue;
+  color: black;
+}
+
+
+/*---------- SHOP ----------*/
+
+/*tabla
+
+table {
+  border: 4px solid;
+  background-color:#b6d1d6;
+ }
+
+th {
+  background-color:#d8f0f5;
+  border: 2px solid;
+ }
+
+tr, td {
+  border: 2px solid;
+  background-color:#d9f9ff;
+ }
+
+.tablaImagenes td img {
+  height: 150px;
+}
+
+.tablaPrecios td{
+  text-align: center;
+}
+
+
+*/
+
+/*---------- CONTACTO ---------*/
+
+form{
+	width: 30%;
+	margin: auto;
+	border: dashed 2px black;
+	padding:10px;
+	border-radius: 20px;
+}
+
+
+/*FOOTER
+
+footer{
+  display: flex;
+  background:linear-gradient(to top, rgb(153, 121, 177),cadetblue);
+  justify-content: center;
+  height: 7vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li {
+  margin: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+footer ul li:hover {
+  color: white;
+}
+
+
+*/
+
+
+

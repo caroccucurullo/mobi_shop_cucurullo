@@ -1,0 +1,94 @@
+/*------------ INDEX --------------*/
+
+main {
+  padding-bottom: 10vh;
+}
+
+/*Barra de navegacion*/
+
+.navbar .nav-link {
+  color: black;
+  margin-right: 20px;
+  transition: 0.2s;
+}
+
+.btn-custom {
+  border: 1.5px solid black;
+  border-radius: 50px;
+  color: black;
+  background: none;
+  padding: 8px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.btn-custom:hover {
+  background: black;
+  border: 1.5px solid black;
+  color: white
+}
+
+.navbar-toggler {
+  padding: .10rem .45rem;
+  border: 1px solid black;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler i.bi-list {
+  color: black;
+  font-size: 1.6rem;
+}
+
+
+/*video*/
+
+.sectionBig {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/*texto sobre video*/
+
+.tuCasa {
+  position: absolute;
+  top: 400%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.deNuevo {
+  position: absolute;
+  top: 550%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.tuHogar {
+  position: absolute;
+  top: 750%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+}
+
+/*productos*/
+
+.posicionBoton {
+  position: absolute;
+  top:70%;
+  left: 70%;
+}
